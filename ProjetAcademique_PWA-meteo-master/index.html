@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Météo App</title>
+	<meta name="description" content="L'application qui vous renseigne sur la météo locale.">
+	<meta name="author" content="Meymoun">
+
+	<meta property="og:title" content="Météo App">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="localhost:5500">
+	<meta property="og:description" content="L'application qui vous renseigne sur la météo locale.">
+	<meta property="og:image" content="/src/assets/logo/meteo.png">
+
+	<link rel="icon" href="/src/assets/logo/meteo.png">
+	<link rel="icon" href="/src/assets/logo/meteo.png" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/src/assets/logo/meteo.png">
+	<meta name="theme-color" content="white">
+
+	<link rel="stylesheet" href="/src/css/index.css?v=1.0">
+
+	<link rel="manifest" href="meteo.webmanifest" />
+</head>
+
+<!-- sass --watch src/scss/main.scss:src/css/index.css -->
+
+<body>
+
+	<header>
+		<div class="headerParts headerTop">
+			<div class="imgContainer burger"><img src="/src/assets//img/burger2.png" alt=""></div>
+			<div>
+				<p id="ville">Votre localisation</p>
+			</div>
+			<div class="imgContainer"><img src="/src/assets/img/map2.png" alt=""></div>
+		</div>
+	</header>
+
+	<div type="home" class="home">
+		<div class="banners">
+			<section class="banner1">
+				<div class="bannerTop">
+					<div cl class="cardHumidity" ass="dateTime">
+						<div class="date">
+							<p>01 Mars 2023</p>
+						</div>
+						<div class="time">
+							<p>14h47</p>
+						</div>
+					</div>
+					<div class="temp">
+						<p id="temperature"></p>°C
+					</div>
+					<div class="condition">ciel dégagé</div>
+				</div>
+				<div class="bannerBot">
+					<div class="windDirection">
+						<p>Direction du vent : <span>données</span></p>
+						<p>+/-<span>Chiffre</span></p>
+					</div>
+					<div class="windSpeed">
+						<p>Vitesse du vent : <span>données</span></p>
+						<p>+/-<span>Chiffre</span></p>
+					</div>
+				</div>
+			</section>
+
+			<section class="banner2">
+				<div class="tempHours">
+					<div class="cardHumidity">
+						<div class="date">16:00</div>
+						<div class="logo"><img src="/src/assets/img/nuage1.png" alt=""></div>
+						<div class="humidity"><span></span><span>0</span>%</div>
+					</div>
+					<div class="cardHumidity">
+						<div class="date">17:00</div>
+						<div class="logo"><img src="/src/assets/img/nuage1.png" alt=""></div>
+						<div class="humidity"><span></span><span>0</span>%</div>
+					</div>
+					<div class="cardHumidity">
+						<div class="date">18:00</div>
+						<div class="logo"><img src="/src/assets/img/nuage1.png" alt=""></div>
+						<div class="humidity"><span></span><span>0</span>%</div>
+					</div>
+					<div class="cardHumidity">
+						<div class="date">19:00</div>
+						<div class="logo"><img src="/src/assets/img/nuage1.png" alt=""></div>
+						<div class="humidity"><span></span><span>0</span>%</div>
+					</div>
+					<div class="cardHumidity">
+						<div class="date">20:00</div>
+						<div class="logo"><img src="/src/assets/img/nuage1.png" alt=""></div>
+						<div class="humidity"><span></span><span>0</span>%</div>
+					</div>
+				</div>
+				<div class="diagram">
+					<!-- <canvas></canvas> -->
+				</div>
+				<div class="infos">
+					<div class="infosdiv"><span class="imgContainer"><img
+								src="/src/assets/img/pluie.png" alt=""></span>
+						<p>Risque de pluie</p>
+					</div>
+					<div class="infosdiv"><span class="imgContainer"><img
+								src="/src/assets/img/neige.png" alt=""></span>
+						<p>Possibilité de
+							neige</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<section></section>
+	</div>
+
+	<footer>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</footer>
+
+	<script src="/server/js/api.js"></script>
+	<script src="/src/js/localisation.js"></script>
+	<script src="/src/js/app.js"></script>
+	<script>var deferredPrompt;
+
+		window.addEventListener('beforeinstallprompt', function (e) {
+			// Empêche l'affichage automatique de la fenêtre d'installation
+			e.preventDefault();
+			// Stocke l'événement pour le déclencher plus tard
+			deferredPrompt = e;
+			// Affiche votre propre bouton d'installation
+			var installButton = document.getElementById('addToHome');
+			installButton.textContent = 'Installer';
+			document.body.appendChild(installButton);
+			// Attachez la logique de gestionnaire de clic
+			installButton.addEventListener('click', function () {
+				// Déclenche la fenêtre d'installation de l'application
+				deferredPrompt.prompt();
+				// Attendre que l'utilisateur réponde à la fenêtre d'installation
+				deferredPrompt.userChoice.then(function (choiceResult) {
+					if (choiceResult.outcome === 'accepted') {
+						console.log('L\'application a été installée');
+					} else {
+						console.log('L\'application n\'a pas été installée');
+					}
+					// Réinitialisez la variable deferredPrompt, car elle ne peut être utilisée qu'une fois
+					deferredPrompt = null;
+				});
+			});
+		});</script>
+</body>
+
+</html>

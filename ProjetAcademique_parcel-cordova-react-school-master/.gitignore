@@ -1,0 +1,12 @@
+.cache
+.dist
+.parcel-cache
+hooks
+node_modules
+platforms
+plugins
+build
+res
+www
+# OS X
+.DS_Store

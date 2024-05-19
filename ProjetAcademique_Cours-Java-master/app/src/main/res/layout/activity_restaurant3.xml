@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp"
+    tools:context=".Restaurant3">
+
+    <TextView
+        android:id="@+id/nomRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Kodawari"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="70dp"
+        android:text="Adresse : 29 Rue Mazarine, 75006 Paris, France "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/specialite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:text="Spécialité : Japonais"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="267dp"
+        android:layout_height="95dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:text="Description du Restaurant :             Itinéraire : RER A jusqu’à Auber puis prendre le métro 7 jusqu’à Pont Neuf"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/carteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="La carte (menu)" />
+
+    <Button
+        android:id="@+id/salleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carteButton"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="220dp"
+        android:text="Salle Virtuelle" />
+
+    <ImageButton
+        android:id="@+id/imageView"
+        android:layout_width="368dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="270dp"
+        app:srcCompat="@drawable/rest3" />
+
+    <Button
+        android:id="@+id/reserver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="520dp"
+        android:text="Réservation place(s)" />
+
+    <Button
+        android:id="@+id/Retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="585dp"
+        android:text="Précédent" />
+
+    <Button
+        android:id="@+id/Suivant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Retour"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="585dp"
+        android:text="Suivant" />
+
+    <Button
+        android:id="@+id/support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="649dp"
+        android:text="Support" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="649dp"
+        android:text="login" />
+
+</RelativeLayout>

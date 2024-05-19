@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block  body %}
+
+	<div class="d-flex flex-column align-items-center">
+
+		<div class="d-flex justify-content-end" style="width:100%;">
+			<div><h2><a href="{{path('equipement')}}" class="btn btn-primary" > Retourner à la page de <b>formulaire </b></a></h2></div>
+		</div>
+
+		<br></br>
+
+		<div><h2> Tableau des équipements de Football <h2></div>
+
+
+		<div>	<table class="table">
+				<tbody>
+					<thread>
+						<tr>
+							<th scope="col">Nom</th>
+							<th scope="col">Quantité</th>
+							<th scope="col">Infos équipement</th>
+						</tr>
+					</thread>
+				
+					{% for object in allequipement %}
+						<tr>
+							<th scope="row">{{object.nom}}</th>
+							<td>{{object.quantite}}</td>
+							<td><a href={{path('description_show', {id: object.id}) }} class="btn btn-primary" role="button"><b>infos supplémentaires</b></a></td>
+						</tr>
+					{% endfor %}
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+{% endblock %}	

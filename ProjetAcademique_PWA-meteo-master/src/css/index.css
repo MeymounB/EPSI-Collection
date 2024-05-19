@@ -1,0 +1,190 @@
+header {
+  display: flex;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imgContainer {
+  display: block;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.imgContainer img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 10px 10px 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 10vh;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+}
+header .headerParts {
+  height: 100%;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+header p {
+  text-align: center;
+}
+header .headerBot {
+  align-items: flex-end;
+}
+
+.home {
+  height: 90vh;
+  padding: 15px;
+  width: 100%;
+  background-color: aquamarine;
+}
+.home .banners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.home .banners .banner1 {
+  height: 20vh;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(227, 227, 227, 0.8588235294);
+}
+.home .banners .banner1 .bannerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  width: inherit;
+}
+.home .banners .banner1 .bannerTop .dateTime {
+  height: 30%;
+}
+.home .banners .banner1 .bannerTop .temp {
+  align-self: flex-start;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.home .banners .banner1 .bannerTop .temp #temperature {
+  font-size: 50px;
+}
+.home .banners .banner1 .bannerBot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: inherit;
+}
+.home .banners .banner1 .bannerBot .windDirection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: inherit;
+}
+.home .banners .banner1 .bannerBot .windSpeed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: inherit;
+}
+.home .banners .banner2 {
+  height: 20vh;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(227, 227, 227, 0.8588235294);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.home .banners .banner2 .tempHours {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.home .banners .banner2 .tempHours .cardHumidity {
+  height: 40px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .banners .banner2 .tempHours .cardHumidity .logo {
+  width: 100%;
+}
+.home .banners .banner2 .tempHours .cardHumidity .logo img {
+  width: 100%;
+}
+.home .banners .banner2 .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home .banners .banner2 .infos .infosdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.home .banners .banner2 .infos .infosdiv span {
+  width: 20px;
+}
+
+footer {
+  position: absolute;
+  height: 10vh;
+  background-color: red;
+}
+
+/*# sourceMappingURL=index.css.map */

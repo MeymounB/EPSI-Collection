@@ -1,0 +1,122 @@
+@font-face {
+	font-family: "StarJedi";
+	src: url(./Starjedi.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background-image: url(../images/background_starwars.png);
+	background-repeat: repeat;
+}
+
+.page {
+	margin-top: 70px;
+}
+
+h1 {
+	font-family: "StarJedi";
+}
+
+h2 {
+	font-family: "StarJedi";
+}
+
+.ecran {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.form_container1 {
+	font-family: "StarJedi";
+	background-color: #3D3E42;
+	margin-top: 30px;
+	height: 48px;
+	margin-bottom: 20px;
+	box-shadow: inset 0px 0px 0px rgb(0 0 0 / 16%), 53px 32px 21px rgb(0 0 0 / 49%);
+	border-bottom: 2px solid rgba(252, 36, 28, 1);
+	opacity: 1;
+}
+
+.taille_border {
+	WIDTH: 50vw;
+	max-width: 400px;
+}
+
+#email,
+#pass {
+	background-color: transparent;
+	border-style: none;
+	color: red;
+}
+
+.form_container2 {
+	margin-top: 30px;
+	font-family: "StarJedi";
+	background-color: #3D3E42;
+	margin-bottom: 20px;
+	height: 48px;
+	box-shadow: inset 0px 0px 0px rgb(0 0 0 / 16%), 53px 32px 21px rgb(0 0 0 / 49%);
+	border-bottom: 2px solid rgba(252, 36, 28, 1);
+	opacity: 1;
+}
+
+
+#text_email {
+	color: ghostwhite;
+	padding-left: 5px;
+	padding-top: 4px;
+	font-size: 13px;
+}
+
+#text_pass {
+	color: ghostwhite;
+	padding-left: 5px;
+	padding-top: 4px;
+	font-size: 13px;
+
+}
+
+.error {
+	margin-left: 150px;
+}
+
+.form_container {
+	background-color: transparent;
+}
+
+label,
+input {
+	display: table-cell;
+	margin-bottom: 15px;
+}
+
+label {
+	padding-right: 10px;
+}
+
+#container_connexion {
+	background-color: rgba(0, 0, 0, 0.49);
+	margin-top: 100px;
+	margin-bottom: 500px;
+	margin-right: 500px;
+	margin-left: 150px;
+	border-radius: 15px;
+	box-shadow: inset 0px 0px 0px #00000029, 53px 32px 21px #0000007E;
+	border: 2px solid #F4F4F4;
+	border-color: red;
+	padding: 40px;
+
+}
+
+.connexion_button {
+	background-color: red;
+	border-style: none;
+	color: white;
+	height: 50px;
+}

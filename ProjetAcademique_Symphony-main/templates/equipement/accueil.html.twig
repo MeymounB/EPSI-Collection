@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block  body %}
+
+	<div class="d-flex flex-column align-items-center form-group">
+
+		<div><h2> Formulaire des équipements de Football <h2></div>
+
+		<br></br>
+
+       			<div>{{form(equipement_form)}}</div>
+
+		<br></br>
+
+		<div><a href="{{path('allequipement')}}" class="btn btn-primary" > Aller à la page des <b>équipements </b></a></div>
+    	</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{
+    "version" : "0.2.0",
+    "configurations": [
+		{
+			"type": "msedge",
+			"request": "launch",
+			"name": "Cordova Debug",
+			"url": "http://localhost:1234",
+			"webRoot": "${workspaceFolder}",
+			"breakOnLoad": true,
+			"sourceMapPathOverrides": {
+				"../*": "${webRoot}/*"
+			}
+		}
+	]
+}

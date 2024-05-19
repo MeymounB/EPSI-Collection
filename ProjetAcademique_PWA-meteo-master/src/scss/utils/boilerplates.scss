@@ -1,0 +1,33 @@
+@use './functions.scss' as funcs;
+@use './mixins.scss' as mixins;
+@use './colors.scss' as colors;
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // height: 100vh;
+    line-height: 1.5;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

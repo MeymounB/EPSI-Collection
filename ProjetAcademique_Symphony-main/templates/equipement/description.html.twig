@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block  body %}
+
+	<div class="d-flex flex-column align-items-center">
+		<div class="d-flex justify-content-between" style="width:100%;">
+			<div><h2><a href="{{path('allequipement')}}" class="btn btn-primary" > Retourner à la page des <b>équipements</b></a></h2></div>
+
+			<div><h2><a href="{{path('equipement')}}" class="btn btn-primary" > Retourner à la page de <b>formulaire</b></a></h2></div>
+		</div>
+
+		<br></br>
+
+		<div><h2> Infos sur l'équipements n°{{description.id}} de Football<h2></div>
+
+		<div>
+			<table class="table">
+				<tbody>
+					<thread>
+						<tr>
+							<th scope="col">Id</th>
+							<th scope="col">Nom</th>
+							<th scope="col">Marque</th>
+							<th scope="col">Prix(€)</th>
+							<th scope="col">Quantité</th>
+							<th scope="col">Description</th>
+						</tr>
+					</thread>
+				<tr>
+				
+					<th scope="row"> {{description.id}}</th>
+					<td>{{description.nom}}</td>
+					<td>{{description.marque}}</td>
+					<td>{{description.prix}}</td>
+					<td>{{description.quantite}}</td>
+					<td style="max-width:450px;">{{description.description}}</td>
+				</tr>
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+{% endblock %}

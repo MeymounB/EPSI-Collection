@@ -1,0 +1,46 @@
+@mixin flexer($ai: null, $jc: null, $orientation: null) {
+    @extend %flex;
+    align-items: #{$ai};
+    justify-content: #{$jc};
+    flex-direction: #{$orientation};
+}
+
+@mixin pseudo($display: null, $w: null, $h: null) {
+    display: #{$display};
+    @extend %absolute;
+    width: #{$w};
+    height: #{$h};
+}
+
+@mixin media($width, $type: min) {
+    $breakpoints: ('phone': 400px,
+        'phone-wide': 480px,
+        'phablet': 560px,
+        'tablet-small': 640px,
+        'tablet': 768px,
+        'tablet-wide': 1024px,
+        'desktop': 1248px,
+        'desktop-wide': 1440px,
+        'desktop-ultra-wide': 1920px,
+    );
+
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+%flex {
+    display: flex;
+}
+
+%absolute {
+    position: absolute;
+}

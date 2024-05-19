@@ -1,0 +1,66 @@
+{
+  "name": "parcel-cordova-react",
+  "version": "1.0.0",
+  "description": "Utilisation de ![](https://cordova.apache.org/static/img/cordova_24.png) [Cordova](https://cordova.apache.org/) avec le bundler ![](https://parceljs.org/assets/parcel.png) [ParcelJS](https://parceljs.org/).",
+  "scripts": {
+    "start": "parcel index.html --dist-dir ./.dist",
+    "simulate-ios": "",
+    "simulate-android": "",
+    "init": "node ./scripts/init.js",
+    "lint": "eslint --fix src/ || exit 0",
+    "build-dev": "parcel build index.html --no-minify --no-source-maps --no-content-hash --public-url . --dist-dir ./www index.html",
+    "build": "parcel build index.html --no-source-maps --no-content-hash --public-url . --dist-dir ./www index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vicfou-dev/parcel-cordova-react.git"
+  },
+  "author": "Victor Morel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vicfou-dev/parcel-cordova-react/issues"
+  },
+  "homepage": "https://github.com/Vicfou-dev/parcel-cordova-react#readme",
+  "dependencies": {
+    "@parcel/transformer-svg-react": "^2.8.3",
+    "@swc/helpers": "^0.4.14",
+    "cordova": "^11.1.0",
+    "parcel": "^2.7.0",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "regenerator-runtime": "^0.13.11",
+    "rimraf": "^4.1.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-whitelist": "^1.3.5",
+    "process": "^0.11.10"
+  },
+  "staticFiles": {
+    "staticPath": "src/assets"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

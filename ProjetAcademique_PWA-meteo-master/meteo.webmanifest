@@ -1,0 +1,35 @@
+{
+	"name": "Météo Progressive Web App",
+	"short_name": "Météo",
+	"description": "Progressive Web App that displays the weather.",
+	"icons": [
+		{
+			"src": "/src/assets/logo/meteo.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "/src/assets/logo/meteo.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/src/assets/logo/meteo.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"prefer_related_applications": true,
+	"related_applications": [
+		{
+			"platform": "play",
+			"id": "com.google.samples.apps.iosched"
+		}
+	],
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"theme_color": "white",
+	"background_color": "white",
+	"orientation": "portrait-primary"
+}

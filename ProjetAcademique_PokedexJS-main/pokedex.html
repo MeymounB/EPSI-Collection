@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokedex</title>
+	<link rel="shortcut icon" type="image/x-icon"
+		href="https://www.mtggrade.com/wp-content/uploads/2021/03/Pokemon-Pokeball.png" />
+	<link rel="stylesheet" href="pokedex.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+	</style>
+</head>
+
+<body>
+	<div style="position: absolute; left: 5px; top: 5px;">
+		<h1>Réalisé par Meymoun Boualaoui</h1>
+	</div>
+	<div class="container flexRow flexCol align-center">
+		<!-- container de pokePad et pokeLib-->
+		<div class="pokePad text-center">
+			<!-- pokePad (1er div)-->
+			<div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+					alt="pokeLogo" style="max-width:230px;"></div>
+			<div class="titre ptb-10">
+				<h1 class="">Pokedex</h1>
+			</div>
+			<div class="mtb-10 ptb-10">
+				<label for="nomPoke">Nom du Pokemon :</label>
+				<br><br>
+				<input type="text" name="nomPoke" class="nomPoke">
+			</div>
+			<!-- Pour la version écrite : -->
+			<!-- <div class="mtb-10 ptb-10">
+				<label for="typePoke">Type du Pokemon :</label>
+				<br><br>
+				<input type="text" name="typePoke" class="typePoke">
+			</div> -->
+			<div class="mtb-10 ptb-10">
+				<!-- La version liste déroulante : -->
+				<label for="typePoke">Type du Pokemon :</label>
+				<br><br>
+				<select name="typePoke" class="typePoke">
+					<option value="">-- options de type :</option>
+					<option class="insecte" value="insecte">insecte</option>
+					<option class="dragon" value="dragon">dragon</option>
+					<option class="fée" value="fée">fée</option>
+					<option class="feu" value="feu">feu</option>
+					<option class="spectre" value="spectre">spectre</option>
+					<option class="sol" value="sol">sol</option>
+					<option class="normal" value="normal">normal</option>
+					<option class="psy" value="psy">psy</option>
+					<option class="acier" value="acier">acier</option>
+					<option class="ténèbres" value="ténèbres">ténèbres</option>
+					<option class="électrik" value="électrik">électrik</option>
+					<option class="combat" value="combat">combat</option>
+					<option class="vol" value="vol">vol</option>
+					<option class="plante" value="plante">plante</option>
+					<option class="glace" value="glace">glace</option>
+					<option class="poison" value="poison">poison</option>
+					<option class="roche" value="roche">roche</option>
+					<option class="eau" value="eau">eau</option>
+				</select>
+			</div>
+			<div class="mtb-10 ptb-10">
+				<label for="imgPoke">URL de l'image du Pokemon :</label>
+				<br><br>
+				<input type="text" name="imgPoke" class="imgPoke">
+			</div>
+			<div class="">
+				<button class="button">Ajouter au Pokedex</button>
+			</div>
+			<!-- Pour l'écriture : -->
+			<!-- <div class="mtb-10 ptb-10" style="margin-top: 15px;">
+				<p class="font-8">Les types de pokémon disponibles sont :</p>
+				<br>
+				<p class="font-8">insecte | dragon | fée | feu | spectre</p>
+				<br>
+				<p class="font-8">sol | normal | psy | acier | ténèbres</p>
+				<br>
+				<p class="font-8">électrik | combat | vol | plante | glace</p>
+				<br>
+				<p class="font-8">poison | roche | eau</p>
+			</div> -->
+		</div>
+
+		<div class="pokeLib flexRow wrap flexCol text-center align-center">
+			<!-- pokeLib (2ème div)-->
+			<!-- L'endroit ou s'ajoute les pokemons -->
+		</div>
+
+	</div>
+	<div
+		style="display: flex; width: 600px; flex-direction: row; align-content: flex-start; justify-content: space-around; position: absolute; left: 50vh;">
+		<div><a href="https://twitter.com/BlackOnii_chan">Twitter</a></div>
+		<div><a href="https://www.instagram.com/readycash2222/">Instagram</a></div>
+		<div><a href="https://github.com/ReadyCash2222">Github</a></div>
+		<div><a href="https://gitlab.com/ReadyCash2002">Gitlab</a></div>
+	</div>
+
+	<script src="pokedex.js"></script>
+</body>
+
+</html>

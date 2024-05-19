@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background: url(../../images/background_starwars.png);
+	background-repeat: repeat;
+}
+
+#battle {
+	border-radius: 15px;
+	border: solid 1px white;
+	background: rgb(200, 36, 28) 0% 0% no-repeat padding-box;
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	font-size: 15px;
+}
+
+.deco {
+	border-radius: 15px;
+	border: solid 1px white;
+	background: rgb(252, 36, 28) 0% 0% no-repeat padding-box;
+	opacity: 0.59;
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	font-size: 15px;
+}
+
+.page {
+	margin-top: 70px;
+}
+
+nav {
+	width: 150px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 9999;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+}
+
+nav ul li {
+	flex: 1 1 auto;
+	text-align: center;
+	position: relative;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid transparent;
+	padding: 10px 10px;
+}
+
+nav a:hover {
+	color: rgb(252, 36, 28);
+	border-bottom: 1px solid white;
+}
+
+.sous {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 11px 5px 43px #00000029;
+	border-radius: 17px;
+	opacity: 1;
+	backdrop-filter: blur(41px);
+	-webkit-backdrop-filter: blur(41px);
+}
+
+nav>ul li:hover .sous {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.sous li {
+	flex: 1 1 auto;
+	text-align: left;
+}
+
+.sous a {
+	padding: 10px;
+	border-bottom: none;
+}
+
+.sous a:hover {
+	border-bottom: none;
+	background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+	content: "▼";
+	font-size: 12px;
+}
+
+
+.banniere {
+	display: block;
+}
+
+/*.bloc{
+
+}
+
+.explications{
+
+}
+*/
+.scratch {
+	min-width: 400px;
+
+}
+
+
+.commandes {
+	padding: 25px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 1px solid white;
+	box-sizing: border-box;
+	box-shadow: rgb(97, 242, 245) 0px 0px 10px 0px;
+}
+
+/*
+.conclusion{
+
+}
+
+.credit{
+	
+}*/

@@ -1,0 +1,259 @@
+body {
+	background-image: url(https://images2.alphacoders.com/116/thumb-1920-1160159.png);
+	background-repeat: repeat-y;
+	background-size: 100% 800px;
+}
+
+h1 {
+	font-family: 'Press Start 2P';
+}
+
+.titre {
+	margin-top: 10px;
+}
+
+.pokePad {
+
+	background-color: #E3350D;
+	border-radius: 25px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	height: 550px;
+	width: 400px;
+	min-width: 300px;
+	margin-right: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	max-width: 200px;
+	max-height: 150px;
+	display: block;
+}
+
+p {
+	color: white;
+	font-family: 'Press Start 2P';
+}
+
+label {
+	color: white;
+	font-family: 'Press Start 2P';
+}
+
+.pokeLib {
+	margin-top: 70px;
+	width: 1000px;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	overflow-y: scroll;
+}
+
+select {
+	cursor: pointer;
+}
+
+
+.button {
+	border-radius: 20px;
+	font-family: 'Press Start 2P';
+	padding: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.flexability {
+
+	border-radius: 30px;
+	height: 300px;
+	min-width: 190px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Press Start 2P', sans-serif;
+}
+
+.font-8 {
+	font-size: 8px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.m-auto {
+	margin: "0 auto";
+}
+
+.ls-1 {
+	letter-spacing: 1px;
+}
+
+.mtb-10 {
+	/*margintopbot*/
+	margin: 10px 0;
+}
+
+.mlr-10 {
+	margin: 0 10px;
+}
+
+.ptb-10 {
+	padding: 10px 0;
+}
+
+.plr-10 {
+	padding: 0 10px;
+}
+
+.flexRow {
+	display: flex;
+}
+
+.justify-sb {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+a {
+	text-decoration: underline;
+	color: black;
+}
+
+@media screen and (max-width:1100px) {
+	.container {
+		width: 100%;
+	}
+
+	.flexCol {
+		flex-direction: column;
+	}
+}
+
+/* Couleurs */
+
+.insecte {
+	background-color: #729F3F;
+
+}
+
+.dragon {
+	background-color: rgb(151, 6, 6);
+}
+
+.fée {
+	background-color: #FDB9E9;
+
+}
+
+.feu {
+	background-color: #FD7D24;
+
+}
+
+.spectre {
+	background-color: #7B62A3;
+
+}
+
+.sol {
+	background-color: #AB9842;
+
+}
+
+.normal {
+	background-color: #A4ACAF;
+
+}
+
+.psy {
+	background-color: #F366B9;
+
+}
+
+.acier {
+	background-color: #9EB7B8;
+
+}
+
+.ténèbres {
+	background-color: #707070;
+
+}
+
+.électrik {
+	background-color: #EED535;
+
+}
+
+.combat {
+	background-color: #D56723;
+
+}
+
+.vol {
+	background-color: #89d4d6;
+
+}
+
+.plante {
+	background-color: #9BCC50;
+
+}
+
+.glace {
+	background-color: #51C4E7;
+
+}
+
+.poison {
+	background-color: #B97FC9;
+
+}
+
+.roche {
+	background-color: #A38C21;
+
+}
+
+.eau {
+	background-color: #4592C4;
+
+}
