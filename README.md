@@ -1,2 +1,4 @@
-# projet-1ere-annee
-Collection de projets réalisés lors de ma première année en école informatique (Première expérience de développement) 
+# EPSI-Collection
+Collection de projets réalisés lors de mes 3 premières années en école informatique à l'EPSI.
+
+C'était ma toute première expérience de développement et d'informatique de manière générale.
