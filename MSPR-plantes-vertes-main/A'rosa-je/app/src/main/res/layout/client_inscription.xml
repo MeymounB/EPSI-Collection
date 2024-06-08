@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#1C1B1B">
+
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_marginStart="80dp">
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/welcome_back_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Bienvenue"
+					android:textColor="#FFFFFF"
+					android:textSize="24sp"
+					android:textStyle="bold" />
+
+			<TextView
+					android:id="@+id/login_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/welcome_back_text"
+					android:layout_marginTop="10dp"
+					android:text="Créer votre compte"
+					android:textColor="#808080"
+					android:textSize="18sp" />
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_below="@+id/login_text"
+					android:id="@+id/radio_conn_insc">
+
+				<RadioGroup
+						android:layout_width="200dp"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_gravity="center">
+
+					<RadioButton
+							android:id="@+id/client_insc"
+							android:layout_width="100dp"
+							android:layout_height="wrap_content"
+							android:text="Client"
+							android:textColor="#808080"
+							android:textColorHint="#808080"
+							android:checked="true"
+							android:onClick="radio_insc" />
+
+					<RadioButton
+							android:id="@+id/botaniste_insc"
+							android:layout_width="100dp"
+							android:layout_height="wrap_content"
+							android:text="Botaniste"
+							android:textColor="#808080"
+							android:textColorHint="#808080"
+							android:onClick="radio_insc" />
+				</RadioGroup>
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_below="@+id/radio_conn_insc"
+					android:id="@+id/nom_prenom">
+
+				<EditText
+						android:id="@+id/prenom_insc"
+						android:layout_width="160dp"
+						android:layout_height="wrap_content"
+						android:hint="Prénom"
+						android:inputType="text"
+						android:minHeight="48dp"
+						android:backgroundTint="#2F2E2E"
+						android:gravity="center"
+						android:textColor="#808080"
+						android:textColorHint="#808080"
+						android:textSize="14sp"
+						tools:ignore="NotSibling" />
+
+				<EditText
+						android:id="@+id/nom_insc"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:hint="Nom"
+						android:inputType="text"
+						android:minHeight="48dp"
+						android:backgroundTint="#2F2E2E"
+						android:textColor="#808080"
+						android:textColorHint="#808080"
+						android:textSize="14sp"
+						tools:ignore="NotSibling" />
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_below="@+id/nom_prenom"
+					android:id="@+id/bloc_adresse">
+
+				<EditText
+						android:id="@+id/adress_postal"
+						android:layout_width="160dp"
+						android:layout_height="wrap_content"
+						android:hint="Adresse Postal"
+						android:inputType="text"
+						android:minHeight="48dp"
+						android:backgroundTint="#2F2E2E"
+						android:textColor="#808080"
+						android:textColorHint="#808080"
+						android:gravity="center"
+						android:textSize="14sp"
+						tools:ignore="NotSibling" />
+
+				<EditText
+						android:id="@+id/numero_rue"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="Numéro"
+						android:inputType="number"
+						android:minHeight="48dp"
+						android:backgroundTint="#2F2E2E"
+						android:textColor="#808080"
+						android:textColorHint="#808080"
+						android:gravity="center"
+						android:textSize="14sp"
+						tools:ignore="NotSibling" />
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_below="@+id/bloc_adresse"
+					android:id="@+id/bloc_adresse2">
+
+				<EditText
+						android:id="@+id/code_postal"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:hint="Code postal"
+						android:inputType="number"
+						android:minHeight="48dp"
+						android:backgroundTint="#2F2E2E"
+						android:gravity="center"
+						android:textColor="#808080"
+						android:textColorHint="#808080"
+						android:textSize="14sp"
+						tools:ignore="NotSibling" />
+
+				<EditText
+						android:id="@+id/ville"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:hint="Ville"
+						android:inputType="text"
+						android:minHeight="48dp"
+						android:backgroundTint="#2F2E2E"
+						android:textColor="#808080"
+						android:textColorHint="#808080"
+						android:textSize="14sp"
+						tools:ignore="NotSibling" />
+
+			</LinearLayout>
+
+			<EditText
+					android:id="@+id/email_address"
+					android:layout_width="327dp"
+					android:layout_height="59dp"
+					android:layout_below="@+id/bloc_adresse2"
+					android:layout_marginTop="11dp"
+					android:backgroundTint="#2F2E2E"
+					android:hint="Adress email"
+					android:gravity="center"
+					android:inputType="textEmailAddress"
+					android:textColor="#808080"
+					android:textColorHint="#808080"
+					android:textSize="14sp"
+					tools:ignore="NotSibling" />
+
+
+			<EditText
+					android:id="@+id/password_insc"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:layout_below="@+id/email_address"
+					android:layout_marginTop="5dp"
+					android:backgroundTint="#2F2E2E"
+					android:hint="Mot de passe"
+					android:inputType="textPassword"
+					android:textColor="#808080"
+					android:gravity="center"
+					android:textColorHint="#808080"
+					android:textSize="14sp" />
+
+			<EditText
+					android:id="@+id/confirm_password"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:layout_below="@+id/password_insc"
+					android:backgroundTint="#2F2E2E"
+					android:hint="Confirmer mot de passe"
+					android:inputType="textPassword"
+					android:gravity="center"
+					android:textColor="#808080"
+					android:textColorHint="#808080"
+					android:textSize="14sp" />
+
+			<RelativeLayout
+					android:id="@+id/rl_signup_button"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_below="@+id/confirm_password"
+					android:layout_marginTop="20dp">
+
+				<!--<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/ic_rectangle"
+						android:backgroundTint="#193155" />-->
+
+				<Button
+						android:id="@+id/button1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="INSCRIPTION"
+						android:textColor="#FFFFFF" />
+
+				<!--<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:text="S'inscrire"
+						android:textColor="#FFFFFF"
+						android:textSize="16sp"
+						android:textStyle="bold" />-->
+			</RelativeLayout>
+
+			<Button
+					android:id="@+id/login"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/rl_signup_button"
+					android:layout_marginTop="15dp"
+					android:gravity="center"
+					android:text="Se connecter"
+					android:textColor="#FFFFFF"
+					android:textSize="13sp"
+					android:textStyle="bold" />
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

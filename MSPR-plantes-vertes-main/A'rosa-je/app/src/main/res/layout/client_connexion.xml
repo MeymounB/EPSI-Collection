@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#1C1B1B">
+
+
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_marginStart="80dp">
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/welcome_back_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Content de vous revoir :D"
+					android:textColor="#FFFFFF"
+					android:textSize="24sp"
+					android:textStyle="bold" />
+
+			<TextView
+					android:id="@+id/login_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/welcome_back_text"
+					android:layout_marginTop="10dp"
+					android:text="Veuillez vous connecter à votre compte."
+					android:textColor="#808080"
+					android:textSize="18sp" />
+
+			<EditText
+					android:id="@+id/mail_conn"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:layout_below="@+id/login_text"
+					android:layout_marginTop="20dp"
+					android:backgroundTint="#2F2E2E"
+					android:hint="Adresse Email"
+					android:inputType="textEmailAddress"
+					android:textColor="#808080"
+					android:textColorHint="#808080"
+					android:textSize="14sp" />
+
+			<EditText
+					android:id="@+id/password_conn"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:layout_below="@+id/mail_conn"
+					android:backgroundTint="#2F2E2E"
+					android:hint="Mot de passe"
+					android:inputType="textPassword"
+					android:textColor="#808080"
+					android:textColorHint="#808080"
+					android:textSize="14sp" />
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/mail_conn"
+					android:layout_alignParentEnd="true"
+					android:layout_marginTop="20dp"
+					android:text="Un oubli ?"
+					android:textColor="#6160A0"
+					android:textSize="14sp" />
+
+			<RelativeLayout
+					android:id="@+id/btn_login"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_below="@+id/password_conn"
+					android:layout_marginTop="30dp">
+
+				<Button
+						android:id="@+id/btn_conn"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="SE CONNECTER"
+						android:textColor="#FFFFFF" />
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:text="Se connecter"
+						android:textColor="#FFFFFF"
+						android:textSize="16sp"
+						android:textStyle="bold" />
+			</RelativeLayout>
+
+			<Button
+					android:id="@+id/btn_insc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/btn_login"
+					android:layout_marginTop="20dp"
+					android:gravity="center"
+					android:text="S'inscrire"
+					android:textColor="#FFFFFF"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+			<View
+					android:layout_width="match_parent"
+					android:layout_height="20dp" />
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>
